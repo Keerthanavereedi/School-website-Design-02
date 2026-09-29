@@ -1,0 +1,1219 @@
+/*==================================================
+  FACULTY PAGE
+==================================================*/
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#fff;
+
+    color:#333;
+
+    overflow-x:hidden;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+/*==================================================
+  HERO SECTION
+==================================================*/
+
+.faculty-hero{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(8,32,63,.65),rgba(8,32,63,.65)),
+    url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.faculty-overlay{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:80px 20px;
+
+}
+
+.faculty-content{
+
+    max-width:1050px;
+
+    width:90%;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:35px;
+
+    padding:80px 70px;
+
+    text-align:center;
+
+    color:#fff;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+
+}
+
+.faculty-content h4{
+
+    display:inline-block;
+
+    padding:12px 30px;
+
+    background:rgba(255,215,0,.18);
+
+    color:#FFD54F;
+
+    border-radius:40px;
+
+    letter-spacing:4px;
+
+    font-size:17px;
+
+    margin-bottom:25px;
+
+}
+
+.faculty-content h2{
+
+    font-size:68px;
+
+    margin-bottom:30px;
+
+    line-height:1.2;
+
+}
+
+.faculty-content p{
+
+    max-width:820px;
+
+    margin:auto;
+
+    font-size:21px;
+
+    line-height:1.9;
+
+    color:#F2F5FA;
+
+}
+
+/*==========================================
+      PRINCIPAL SECTION
+==========================================*/
+
+.principal-section{
+
+padding:130px 8%;
+
+background:#fff;
+
+}
+
+.principal-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1.2fr;
+
+gap:90px;
+
+align-items:center;
+
+}
+
+.principal-image{
+
+position:relative;
+
+}
+
+.image-border{
+
+padding:15px;
+
+border-radius:35px;
+
+background:linear-gradient(135deg,#0E5AA7,#16B8A7);
+
+}
+
+.image-border img{
+
+width:100%;
+
+display:block;
+
+border-radius:28px;
+
+}
+
+.experience-card{
+
+position:absolute;
+
+bottom:30px;
+
+right:-20px;
+
+background:#fff;
+
+padding:25px;
+
+border-radius:22px;
+
+box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+text-align:center;
+
+}
+
+.experience-card h2{
+
+font-size:42px;
+
+color:#0E5AA7;
+
+margin-bottom:8px;
+
+}
+
+.experience-card span{
+
+font-size:14px;
+
+color:#666;
+
+line-height:1.6;
+
+}
+
+.section-subtitle{
+
+color:#0E5AA7;
+
+font-weight:700;
+
+letter-spacing:3px;
+
+}
+
+.principal-content h2{
+
+font-size:56px;
+
+margin:25px 0;
+
+color:#082C54;
+
+line-height:1.2;
+
+}
+
+.principal-quote{
+
+background:#EEF7FF;
+
+border-left:5px solid #0E5AA7;
+
+padding:28px;
+
+border-radius:18px;
+
+font-style:italic;
+
+line-height:1.9;
+
+margin-bottom:35px;
+
+color:#555;
+
+}
+
+.principal-content p{
+
+font-size:17px;
+
+line-height:2;
+
+color:#666;
+
+margin-bottom:22px;
+
+}
+
+.principal-signature{
+
+margin-top:40px;
+
+}
+
+.principal-signature h3{
+
+font-size:28px;
+
+color:#082C54;
+
+}
+
+.principal-signature span{
+
+color:#0E5AA7;
+
+font-weight:600;
+
+}
+
+@media(max-width:950px){
+
+.principal-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.principal-content{
+
+text-align:center;
+
+}
+
+.experience-card{
+
+position:static;
+
+margin:25px auto 0;
+
+width:230px;
+
+}
+
+}
+/*==================================================
+  FACULTY MEMBERS
+==================================================*/
+
+.faculty-members{
+
+    padding:120px 8%;
+
+    background:linear-gradient(180deg,#F6FBFF,#FFFFFF);
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    max-width:850px;
+
+    margin:0 auto 70px;
+
+}
+
+.section-title h5{
+
+    color:#0E5AA7;
+
+    letter-spacing:3px;
+
+    font-size:17px;
+
+    margin-bottom:15px;
+
+}
+
+.section-title h2{
+
+    font-size:50px;
+
+    color:#082C54;
+
+    margin-bottom:20px;
+
+}
+
+.section-description{
+
+    color:#666;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+}
+
+.faculty-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:35px;
+
+}
+
+.faculty-card{
+
+    background:#fff;
+
+    border-radius:30px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    overflow:hidden;
+
+}
+
+.faculty-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 30px 70px rgba(0,0,0,.15);
+
+}
+
+.faculty-card img{
+
+    width:160px;
+
+    height:160px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid #0E5AA7;
+
+    margin-bottom:25px;
+
+    transition:.4s;
+
+}
+
+.faculty-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.faculty-card h3{
+
+    font-size:28px;
+
+    color:#082C54;
+
+    margin-bottom:10px;
+
+}
+
+.subject{
+
+    display:inline-block;
+
+    background:linear-gradient(135deg,#0E5AA7,#14B8A6);
+
+    color:#fff;
+
+    padding:8px 22px;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+    margin-bottom:18px;
+
+}
+
+.faculty-card p{
+
+    color:#666;
+
+    font-size:17px;
+
+    margin-bottom:20px;
+
+}
+
+.experience{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    background:#EEF7FF;
+
+    color:#0E5AA7;
+
+    font-weight:600;
+
+}
+<!-- ================= FACULTY STATISTICS ================= -->
+
+<section class="faculty-stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <h2>150+</h2>
+
+                <p>Experienced Teachers</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2>25+</h2>
+
+                <p>Academic Departments</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2>20+</h2>
+
+                <p>Years of Teaching Excellence</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h2>100%</h2>
+
+                <p>Qualified Faculty</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= JOIN OUR TEAM ================= -->
+
+<section class="faculty-cta">
+
+    <div class="container">
+
+        <h2>Inspiring Young Minds Every Day</h2>
+
+        <p>
+
+            Our faculty is committed to academic excellence, innovation,
+            leadership and holistic student development.
+
+        </p>
+
+        <a href="contact.html" class="btn1">Contact Us</a>
+
+        <a href="admission.html" class="btn2">Apply Now</a>
+
+    </div>
+
+</section>
+/*======================================
+PRINCIPAL SPOTLIGHT
+======================================*/
+
+.principal-spotlight{
+
+    padding:130px 8%;
+
+    background:#fff;
+
+}
+
+.principal-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1.2fr;
+
+    gap:90px;
+
+    align-items:center;
+
+}
+
+.principal-photo{
+
+    position:relative;
+
+}
+
+.photo-frame{
+
+    padding:18px;
+
+    border-radius:35px;
+
+    background:linear-gradient(135deg,#0E5AA7,#14B8A6);
+
+}
+
+.photo-frame img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:28px;
+
+}
+
+.experience-badge{
+
+    position:absolute;
+
+    right:-20px;
+
+    bottom:35px;
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+}
+
+.experience-badge h2{
+
+    color:#0E5AA7;
+
+    font-size:42px;
+
+}
+
+.experience-badge span{
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+.small-title{
+
+    color:#0E5AA7;
+
+    letter-spacing:3px;
+
+    font-weight:700;
+
+}
+
+.principal-details h2{
+
+    font-size:58px;
+
+    margin:25px 0;
+
+    color:#082C54;
+
+    line-height:1.2;
+
+}
+
+.quote-box{
+
+    background:#EEF7FF;
+
+    border-left:6px solid #0E5AA7;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    font-style:italic;
+
+    margin:35px 0;
+
+    color:#444;
+
+    line-height:1.9;
+
+}
+
+.principal-details p{
+
+    color:#666;
+
+    line-height:2;
+
+    margin-bottom:22px;
+
+    font-size:17px;
+
+}
+
+.principal-sign{
+
+    margin-top:40px;
+
+}
+
+.principal-sign h3{
+
+    color:#082C54;
+
+    font-size:28px;
+
+}
+
+.principal-sign span{
+
+    color:#0E5AA7;
+
+    font-weight:600;
+
+}
+
+@media(max-width:950px){
+
+.principal-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+.principal-details{
+
+text-align:center;
+
+}
+
+.experience-badge{
+
+position:static;
+
+margin:25px auto 0;
+
+width:220px;
+
+}
+
+}
+/*==================================
+OUR FACULTY
+==================================*/
+/*==========================================
+      TEACHERS SECTION
+==========================================*/
+
+.teachers-section{
+
+padding:130px 8%;
+
+background:linear-gradient(180deg,#F7FBFF,#FFFFFF);
+
+}
+
+.section-heading{
+
+text-align:center;
+
+max-width:850px;
+
+margin:auto;
+
+margin-bottom:70px;
+
+}
+
+.section-heading span{
+
+color:#0E5AA7;
+
+font-weight:700;
+
+letter-spacing:3px;
+
+}
+
+.section-heading h2{
+
+font-size:54px;
+
+color:#082C54;
+
+margin:20px 0;
+
+}
+
+.section-heading p{
+
+color:#666;
+
+font-size:18px;
+
+line-height:1.9;
+
+}
+
+.teachers-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:40px;
+
+}
+
+.teacher-card{
+
+background:#fff;
+
+border-radius:30px;
+
+overflow:hidden;
+
+box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+transition:.45s;
+
+}
+
+.teacher-card:hover{
+
+transform:translateY(-15px);
+
+box-shadow:0 35px 70px rgba(0,0,0,.16);
+
+}
+
+.teacher-image{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.teacher-image img{
+
+width:100%;
+
+height:360px;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.teacher-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.teacher-badge{
+
+position:absolute;
+
+top:20px;
+
+left:20px;
+
+background:#0E5AA7;
+
+color:#fff;
+
+padding:10px 20px;
+
+border-radius:30px;
+
+font-size:14px;
+
+font-weight:600;
+
+}
+
+.teacher-content{
+
+padding:35px;
+
+}
+
+.teacher-content h3{
+
+font-size:28px;
+
+color:#082C54;
+
+margin-bottom:10px;
+
+}
+
+.teacher-content span{
+
+display:block;
+
+color:#0E5AA7;
+
+font-weight:600;
+
+margin-bottom:18px;
+
+}
+
+.teacher-content p{
+
+color:#666;
+
+line-height:1.9;
+
+margin-bottom:25px;
+
+}
+
+.teacher-footer{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+border-top:1px solid #eee;
+
+padding-top:18px;
+
+}
+
+.teacher-footer small{
+
+color:#666;
+
+font-weight:600;
+
+}
+
+.teacher-footer a{
+
+text-decoration:none;
+
+color:#0E5AA7;
+
+font-weight:700;
+
+}
+/*==========================================
+WHY FACULTY
+==========================================*/
+
+.why-faculty{
+
+padding:120px 8%;
+
+background:#fff;
+
+}
+
+.why-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:35px;
+
+margin-top:60px;
+
+}
+
+.why-card{
+
+background:#fff;
+
+padding:40px 30px;
+
+text-align:center;
+
+border-radius:25px;
+
+box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.why-card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.why-icon{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+}
+
+.why-card h3{
+
+font-size:26px;
+
+color:#082C54;
+
+margin-bottom:15px;
+
+}
+
+.why-card p{
+
+color:#666;
+
+line-height:1.8;
+
+}
+
+/*==========================================
+STATISTICS
+==========================================*/
+
+.faculty-stats{
+
+background:url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80') center/cover;
+
+background-attachment:fixed;
+
+}
+
+.stats-overlay{
+
+background:rgba(8,44,84,.82);
+
+padding:120px 8%;
+
+}
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:35px;
+
+}
+
+.stat-box{
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(8px);
+
+padding:45px 25px;
+
+text-align:center;
+
+border-radius:25px;
+
+border:1px solid rgba(255,255,255,.2);
+
+}
+
+.stat-box h2{
+
+font-size:50px;
+
+color:#fff;
+
+margin-bottom:15px;
+
+}
+
+.stat-box p{
+
+color:#eee;
+
+font-size:18px;
+
+}
+/*==========================================
+TESTIMONIALS
+==========================================*/
+
+.testimonial-section{
+
+padding:120px 8%;
+
+background:#F8FBFF;
+
+}
+
+.testimonial-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:35px;
+
+margin-top:60px;
+
+}
+
+.testimonial-card{
+
+background:#fff;
+
+padding:40px;
+
+border-radius:25px;
+
+box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.testimonial-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.testimonial-card p{
+
+line-height:2;
+
+color:#555;
+
+font-style:italic;
+
+margin-bottom:25px;
+
+}
+
+.testimonial-card h3{
+
+color:#0E5AA7;
+
+}
+
+/*==========================================
+CTA
+==========================================*/
+
+.faculty-cta{
+
+background:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80') center/cover;
+
+}
+
+.cta-overlay{
+
+padding:130px 8%;
+
+background:rgba(8,44,84,.82);
+
+text-align:center;
+
+}
+
+.faculty-cta h2{
+
+font-size:56px;
+
+color:#fff;
+
+margin-bottom:25px;
+
+}
+
+.faculty-cta p{
+
+max-width:700px;
+
+margin:auto;
+
+color:#eee;
+
+line-height:2;
+
+margin-bottom:40px;
+
+font-size:18px;
+
+}
+
+.cta-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
